@@ -1,20 +1,16 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    Check is the given number is even or not. Your function shoudl return {% if interpreter.slug == "js-node" %}true{% else %}True{% endif %} if the number is even, and{% if interpreter.slug == "js-node" %}false{% else %}False{% endif %} if the number is odd.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> Int.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Bool. 
 </p>
 
 
@@ -25,12 +21,14 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">isEven(2) == true
+isEven(5) == false
+isEven(0) == true
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">is_even(2) == True
+is_even(5) == False
+is_even(0) == True
 </pre>
 {% endif %}
 </div>
