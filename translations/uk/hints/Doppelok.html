@@ -1,0 +1,67 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        З чого мені розпочати вирішувати цю місію?
+    </div>
+    <div class="answer">
+        Ідея місії в тому, щоб перевірити чи є дане число парним за допомогою умови "if".
+        Отже, якщо умова "if" виконується, то тобі потрібно повернути "True", якщо ні - "False"
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Як мені перевірити, що число парне?
+    </div>
+    <div class="answer">
+        Ти можеш використати оператор "%", щоб перевірити число на парність. Спробуй у консолі:
+        <pre class="brush: python">
+number = 10
+number % 2  # оператор "%" допоможе зрозуміти чи ділиться число "number" на 2 без остачі
+0  # якщо так, то ти отримаєш "0", якщо ні - "1"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Потрібна допомога! Що далі роботи?
+    </div>
+    <div class="answer">
+        Спробуй поєднати умову "if" і оператор "%". Але тут треба приділити увагу! Оператор "%" поверне "0" (це те саме що "False") якщо "number" парне число.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Як мені це зробити? Покажи код, будь ласка!
+    </div>
+    <div class="answer">
+        Тримай:
+        <pre class="brush: python">
+if not number % 2  # це те саме що і "if number % 2 == 0"
+    return True  # ти повертаєш "True" якщо число парне
+else:
+    return False  # ти повертаєш "False" якщо число непарне
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Останнє запитання. Як виглядає фінальний код?
+    </div>
+    <div class="answer">
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+    if not num % 2:
+        return True
+    else:
+        return False
+        </pre>
+        <p>Або можна записати в один рядок:</p>
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+    return True if not num % 2 else False
+        </pre>
+    </div>
+</div>
+
+
+</body>

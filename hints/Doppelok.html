@@ -1,0 +1,67 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        The idea of the mission is to check if the given number is even or not using "if" condition.
+        So, if condition is passed, you need to return "True", if not - "False"
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        How I can check if the given number is even?
+    </div>
+    <div class="answer">
+        You can use the operator "%" to check if the given number is even. Try in your python console:
+        <pre class="brush: python">
+number = 10
+number % 2  # operator "%" will help you to understand if "number" is evenly divisible by 2
+0  # if it is, you will get "0", if not - "1"
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I have gone half way through. Need help!
+    </div>
+    <div class="answer">
+        Well, try to combine "if" condition and operator "%". But be careful! Operator "%" will return "0" (which the same as "False") if "number" is even.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. Can you show me how it must look like?
+    </div>
+    <div class="answer">
+        Here you are:
+        <pre class="brush: python">
+if not number % 2  # It is the same as "if number % 2 == 0"
+    return True  # You return "True" if number is even
+else:
+    return False  # You return "False" if number is odd
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        One last question. How my final solution will look like?
+    </div>
+    <div class="answer">
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+    if not num % 2:
+        return True
+    else:
+        return False
+        </pre>
+        <p>Or you can do it in one line</p>
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+    return True if not num % 2 else False
+        </pre>
+    </div>
+</div>
+
+
+</body>
