@@ -28,8 +28,7 @@ checkio.referee.cover_codes
 
 from checkio.signals import ON_CONNECT
 from checkio import api
-from checkio.referees.io import CheckiOReferee
-from checkio.referees import cover_codes
+from checkio.referees.io_template import CheckiOReferee
 
 from tests import TESTS
 
@@ -42,7 +41,9 @@ api.add_listener(
             "js": "isEven"
         },
         cover_code={
-            'python-3': cover_codes.unwrap_args,
-            'js-node': cover_codes.js_unwrap_args
+            'python-3': {},
+            'js-node': {
+                # "dateForZeros": True,
+            }
         }
     ).on_ready)

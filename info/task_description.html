@@ -20,19 +20,8 @@
         <strong>Example:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isEven(2) == true
-isEven(5) == false
-isEven(0) == true
-</pre>
-{% else %}
-<pre class="brush: python">is_even(2) == True
-is_even(5) == False
-is_even(0) == True
-</pre>
-{% endif %}
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
-
 
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
@@ -46,5 +35,5 @@ is_even(0) == True
 <!-- The section is optional -->
 <p>
     <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
+    <i>given int should be between -1000 and 1000</i>
 </p>
