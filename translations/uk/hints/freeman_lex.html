@@ -1,0 +1,53 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Я уявлення не маю, як розв'язати це завдання!
+    </div>
+    <div class="answer">
+        Парні числа діляться на 2 із остачею 0. Тому, щоб розв'язати цю місію,
+        ти маєш поділити вхідне число на 2, знайти остачу і порівняти її із 0.  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Які інструменти Python мені для цього використати?
+    </div>
+    <div class="answer">
+        Тобі слід використати оператор остачі (%), який повертає остачу від ділення
+        і оператор рівності (==).
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Я вцілому розумію, але потрібно побачити остаточний код.
+    </div>
+    <div class="answer">
+        Ось він:
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+    
+    return num % 2 == 0        
+        </pre>
+        Розв'язок може бути цікавішим. (num % 2) відразу повертає значення, яке може розглядатися як булеве,
+        тому нам не потрібне (==0). Але для парних чисел (num % 2) повертатиме 0, що в булевій логіці значить False.
+        Тому тобі потрібно використати оператор 'not' для заміни булевого значення на протилежне, оскільки функція
+        повинна повертати True для парних чисел.
+        У такому випадку код матиме вигляд:
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+                
+    return not num % 2        
+        </pre>      
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Дякую. Тепер я знаю і розумію більше! Усе працює як слід!
+    </div>
+    <div class="answer">
+        Радий це чути!
+    </div>
+</div>
+
+
+</body>

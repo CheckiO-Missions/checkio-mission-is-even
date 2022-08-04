@@ -1,0 +1,52 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        Even numbers are evenly divisible by 2 (devided by 2 with reminder 0). So to solve this mission
+        you should devide input number by two, find the reminder and compare it to 0.  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        What instruments of Python should I use?
+    </div>
+    <div class="answer">
+        You should use the modulo operator (%), which returns reminder of division
+        and the equality operator (==).
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I generally understand, but need to see the final solution.
+    </div>
+    <div class="answer">
+        Here it is.
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+    
+    return num % 2 == 0        
+        </pre>
+        The solution may be a little bit tricky. (num % 2) already returns value, which may be used as bool,
+        so we don't need (==0). But for even numbers (num % 2) will return 0, which in boolean logic means False.
+        So you have to use 'not' operator to invert bool value, because the function must return True for even.
+        And the code is:
+        <pre class="brush: python">
+def is_even(num: int) -> bool:
+                
+    return not num % 2        
+        </pre>      
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Thanks. I know and understand more now! Everything works!
+    </div>
+    <div class="answer">
+        Glad to hear it!
+    </div>
+</div>
+
+
+</body>
