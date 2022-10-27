@@ -1,16 +1,16 @@
 <!-- Describe task in general -->
 
 <p>
-    Check if the given number is even or not. Your function should return {% if interpreter.slug == "js-node" %}true{% else %}True{% endif %} if the number is even, and {% if interpreter.slug == "js-node" %}false{% else %}False{% endif %} if the number is odd.
+    Check if the given number is even or not. Your function should return {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %} if the number is even, and {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %} if the number is odd.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> An int.
+    <strong>Input:</strong> {% if is_js %}A number{% else %}An integer{% endif %}.
 </p>
 
 <p>
-    <strong>Output: </strong> A bool. 
+    <strong>Output:</strong> {% if is_js %}Boolean{% else %}Bool{% endif %}. 
 </p>
 
 
@@ -27,7 +27,7 @@
 <!-- The section is optional -->
 <p class="for_info_only">
 
-    <strong>How it’s used: </strong>
+    <strong>How it’s used:</strong>
     <i>(math is used everywhere)</i>
 </p>
 
