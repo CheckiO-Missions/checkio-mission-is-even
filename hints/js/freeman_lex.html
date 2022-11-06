@@ -1,0 +1,53 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <i>I have no idea how to start solving this mission.</i>
+    </div>
+    <div class="answer">
+        <p>
+            💡 Even numbers are evenly divisible by 2 (divided by 2 with reminder 0). So to solve this mission you should divide input number by two, find the reminder and compare it to 0.
+        </p>  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>What should I start from?</i>
+    </div>
+    <div class="answer">
+        <p>
+            You should use the <a target="_blank" href="https://www.w3schools.com/js/js_operators.asp"> modulus operator %</a>, which returns reminder of division, and the equality operator (==).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>I generally understand, but need to see the final solution.</i>
+    </div>
+    <div class="answer">
+        Here it is.
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return num % 2 == 0;
+}      
+        </pre>
+        <p>
+            The solution may be a little bit tricky. <b class="code">num % 2</b> already returns value, which may be used as bool, so we don't need <b class="code">== 0</b>. But for even numbers <b class="code">num % 2</b> will return <b class="code">0</b>, which in boolean logic means <b class="code">false</b>. So you have to use 'not' operator <b class="code">!</b> to invert bool value, because the function must return <b class="code">true</b> for even numbers. And the code is:
+        </p>
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return !(num % 2);
+}       
+        </pre>      
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <i>Thanks. I know and understand more now! Everything works!</i>
+    </div>
+    <div class="answer">
+        👍 Glad to hear it!
+    </div>
+</div>
+</body>
