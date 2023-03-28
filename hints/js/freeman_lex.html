@@ -25,21 +25,25 @@
     </div>
     <div class="answer">
         Here it is.
+        <div class="spoiler">
         <pre class="brush: javascript">
 function isEven(num: number): boolean {
 
     return num % 2 == 0;
 }      
         </pre>
+        </div>
         <p>
             The solution may be a little bit tricky. <b class="code">num % 2</b> already returns value, which may be used as bool, so we don't need <b class="code">== 0</b>. But for even numbers <b class="code">num % 2</b> will return <b class="code">0</b>, which in boolean logic means <b class="code">false</b>. So you have to use 'not' operator <b class="code">!</b> to invert bool value, because the function must return <b class="code">true</b> for even numbers. And the code is:
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 function isEven(num: number): boolean {
 
     return !(num % 2);
 }       
-        </pre>      
+        </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
