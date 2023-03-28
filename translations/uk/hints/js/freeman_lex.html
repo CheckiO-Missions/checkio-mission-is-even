@@ -25,21 +25,25 @@
     </div>
     <div class="answer">
         Ось він:
+        <div class="spoiler">
         <pre class="brush: javascript">
 function isEven(num: number): boolean {
 
     return num % 2 == 0;
 }           
         </pre>
+        </div>
         <p>
             Розв'язок може бути цікавішим. <b class="code">num % 2</b> відразу повертає значення, яке може розглядатися як булеве, тому нам не потрібне <b class="code">== 0</b>. Але для парних чисел <b class="code">num % 2</b> повертатиме <b class="code">0</b>, що в булевій логіці значить <b class="code">false</b>. Тому тобі потрібно використати оператор <b class="code">!</b> для заміни булевого значення на протилежне, оскільки функція повинна повертати <b class="code">true</b> для парних чисел. У такому випадку код матиме вигляд:
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 function isEven(num: number): boolean {
 
     return !(num % 2);
 }            
-        </pre>      
+        </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
