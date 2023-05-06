@@ -1,0 +1,39 @@
+<!-- Describe task in general -->
+
+<p>
+    Prüfen Sie, ob die angegebene Zahl gerade ist oder nicht. Ihre Funktion sollte {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %} zurückgeben, wenn die Zahl gerade ist, und {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %}, wenn die Zahl ungerade ist.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> {% if is_js %}Eine Zahl{% else %}Eine ganze Zahl{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Boolescher Wert{% else %}Bool{% endif %}. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiel:</strong>
+    </p>
+
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Wie es verwendet wird:</strong>
+    <i>(Mathe wird überall verwendet)</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <i>gegebener int sollte zwischen -1000 und 1000 liegen</i>
+</p>

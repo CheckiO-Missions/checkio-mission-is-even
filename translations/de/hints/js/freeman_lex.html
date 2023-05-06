@@ -1,0 +1,57 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.</p>
+    </div>
+    <div class="answer">
+        <p>
+            💡 Gerade Zahlen sind gleichmäßig durch 2 teilbar (geteilt durch 2 mit Rest 0). Um diese Aufgabe zu lösen, musst du also die eingegebene Zahl durch zwei teilen, den Rest finden und mit 0 vergleichen.
+        </p>  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Womit soll ich beginnen?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Sie sollten den <a target="_blank" href="https://www.w3schools.com/js/js_operators.asp"> Modulus-Operator %</a> verwenden, der den Rest der Division liefert, und den Gleichheitsoperator (==).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ich verstehe das im Allgemeinen, muss aber die endgültige Lösung sehen.</p>
+    </div>
+    <div class="answer">
+        Hier ist sie.
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return num % 2 == 0;
+}      
+        </pre>
+        </div>
+       <p> 
+            Die Lösung kann etwas knifflig sein. <b class="code">num % 2</b> gibt bereits einen Wert zurück, der als bool verwendet werden kann, also brauchen wir nicht <b class="code">== 0</b>. Aber für gerade Zahlen gibt <b class="code">num % 2</b> <b class="code">0</b> zurück, was in der boolschen Logik <b class="code">falsch</b> bedeutet. Sie müssen also den 'not'-Operator <b class="code">!</b> verwenden, um den boolschen Wert zu invertieren, da die Funktion für gerade Zahlen <b class="code">true</b> zurückgeben muss. Und der Code ist:
+       </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return !(num % 2);
+}       
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Danke! Ich weiß und verstehe jetzt mehr! Alles funktioniert!</p>
+    </div>
+    <div class="answer">
+        👍 Freut mich zu hören!
+    </div>
+</div>
+</body>
