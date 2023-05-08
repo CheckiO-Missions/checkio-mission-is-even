@@ -1,0 +1,57 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Je n'ai aucune idée de la manière de commencer à résoudre cette mission.</p>
+    </div>
+    <div class="answer">
+        <p>
+            💡 Les nombres pairs sont divisibles par 2 (divisés par 2 avec un reste de 0). Pour résoudre cette mission, vous devez donc diviser le nombre d'entrée par deux, trouver le reste et le comparer à 0.
+        </p>  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Par quoi dois-je commencer ?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Vous devez utiliser l'<a target="_blank" href="https://www.w3schools.com/js/js_operators.asp"> opérateur de module %</a>, qui renvoie le reste de la division, et l'opérateur d'égalité (==).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Je comprends en général, mais j'ai besoin de voir la solution finale.</p>
+    </div>
+    <div class="answer">
+        La voici.
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num : nombre) : boolean {
+
+    return num % 2 == 0 ;
+}      
+        </pre>
+        </div>
+       <p> 
+            La solution peut être un peu délicate. <b class="code">num % 2</b> renvoie déjà une valeur qui peut être utilisée comme bool, nous n'avons donc pas besoin de <b class="code">== 0</b>. Mais pour les nombres pairs, <b class="code">num % 2</b> renverra <b class="code">0</b>, ce qui, dans la logique booléenne, signifie <b class="code">faux</b>. Vous devez donc utiliser l'opérateur 'not'<b class="code">!</b> pour inverser la valeur booléenne, car la fonction doit retourner <b class="code">vrai</b> pour les nombres pairs. Le code est le suivant :
+       </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num : number) : boolean {
+
+    return !(num % 2) ;
+}       
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Merci. Je sais et je comprends mieux maintenant ! Tout fonctionne !</p>
+    </div>
+    <div class="answer">
+        👍 Heureux de l'entendre !
+    </div>
+</div>
+</body>
