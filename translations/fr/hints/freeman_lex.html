@@ -1,0 +1,55 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Je n'ai aucune idée de la manière de résoudre cette mission</p>
+    </div>
+    <div class="answer">
+        <p>
+            💡 Les nombres pairs sont divisibles par 2 (divisés par 2 avec un reste de 0). Pour résoudre cette mission, vous devez donc diviser le nombre d'entrée par deux, trouver le reste et le comparer à 0.  
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Quels instruments de Python dois-je utiliser ?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Vous devez utiliser l'<a target="_blank" href="https://realpython.com/python-modulo-operator/#modulo-operator-with-int"> opérateur modulo %</a>, qui renvoie le reste de la division, et l'opérateur d'égalité (==).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Je comprends en général, mais j'ai besoin de voir la solution finale.</p>
+    </div>
+    <div class="answer">
+        La voici.
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_even(num : int) -&gt; bool :
+    
+    return num % 2 == 0 
+        </pre>
+        </div>
+       <p> 
+            La solution peut être un peu délicate. <b class="code">num % 2</b> renvoie déjà une valeur qui peut être utilisée comme bool, nous n'avons donc pas besoin de <b class="code">== 0</b>. Mais pour les nombres pairs, <b class="code">num % 2</b> renverra <b class="code">0</b>, ce qui, dans la logique booléenne, signifie <b class="code">False</b>. Vous devez donc utiliser l'opérateur <b class="code">not</b> pour inverser la valeur bool, car la fonction doit retourner <b class="code">True</b> pour les nombres pairs. Le code est le suivant :
+       </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_even(num : int) -&gt; bool :
+                
+    return not num % 2 
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Merci. Je comprends mieux maintenant ! Tout fonctionne !</p>
+    </div>
+    <div class="answer">
+        👍 Heureux de l'entendre !
+    </div>
+</div>
+</body>
