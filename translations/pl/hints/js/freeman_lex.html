@@ -1,0 +1,57 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>Nie mam pojęcia, jak zacząć rozwiązywać tę misję.</p>
+    </div>
+    <div class="answer">
+        <p>
+            liczby parzyste są podzielne przez 2 (dzielą się przez 2 z resztą 0). Aby rozwiązać to zadanie, należy podzielić liczbę wejściową przez dwa, znaleźć resztę i porównać ją z 0.
+        </p>  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Od czego powinienem zacząć?</p>
+    </div>
+    <div class="answer">
+        <p>
+            Powinien Pan użyć funkcji <a target="_blank" href="https://www.w3schools.com/js/js_operators.asp"> modulus operator %</a>, która zwraca resztę z dzielenia, oraz operatora równości (==).
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Ogólnie rozumiem, ale proszę zobaczyć ostateczne rozwiązanie.</p>
+    </div>
+    <div class="answer">
+        Proszę.
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return num % 2 == 0;
+}      
+        </pre>
+        </div>
+       <p> 
+            Rozwiązanie może być nieco skomplikowane. <b class="code">num % 2</b> już zwraca wartość, która może być użyta jako bool, więc nie potrzebujemy <b class="code">== 0</b>. Ale dla liczb parzystych <b class="code">num % 2</b> zwróci <b class="code">0</b>, co w logice boole'owskiej oznacza <b class="code">false</b>. Proszę więc użyć operatora 'not' <b class="code">!</b>, aby odwrócić wartość bool, ponieważ funkcja musi zwrócić <b class="code">true</b> dla li </p>czb parzystych. <p>Kod wygląda następująco:
+       </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return!(num % 2);
+}       
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Dzięki. Teraz wiem i rozumiem więcej! Wszystko działa!</p>
+    </div>
+    <div class="answer">
+        miło mi to słyszeć!
+    </div>
+</div>
+</body>

@@ -1,23 +1,23 @@
 <!-- Describe task in general -->
 
 <p>
-    Sprawdź, czy podana liczba jest parzysta. Twoja funkcja powinna zwrócić {% if interpreter.slug == "js-node" %}true{% else %}True{% endif %} jeśli liczba jest parzysta i {% if interpreter.slug == "js-node" %}false{% else %}False{% endif %} jeśli jest nieparzysta.
+    Proszę sprawdzić, czy podana liczba jest parzysta czy nieparzysta. Państwa funkcja powinna zwrócić {% if is_js %}<b class="code">true</b> {% else %} <b class="code">True</b> {% endif %} jeśli liczba jest parzysta, oraz {% if is_js %}<b class="code">false</b> {% else %} <b class="code">False</b> {% endif %} jeśli liczba jest nieparzysta.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Wejście: </strong> Int.
+   <strong>Dane wejściowe:</strong> {% if is_js %}A number{% else %} An int{% endif %}.
 </p>
 
 <p>
-    <strong>Wyjście: </strong> Bool. 
+   <strong>Dane wyjściowe:</strong> {% if is_js %}Boolean{% else %} Bool{% endif %}. 
 </p>
 
 
 <!-- Give some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Przykład:</strong>
+        <strong>Przykłady:</strong>
     </p>
 
     <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
@@ -27,13 +27,13 @@
 <!-- The section is optional -->
 <p class="for_info_only">
 
-    <strong>Do czego jest używane: </strong>
-    <i>(matma jest używana wszędzie ;) )</i>
+    <strong>Jak jest używana:</strong>
+    <i>(matematyka jest używana wszędzie)</i>
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p>
     <strong>Warunek wstępny:</strong>
-    <i>Liczba powinna być z zakresu od  -1000 do 1000</i>
+    <i>podana wartość int powinna zawierać się w przedziale od -1000 do 1000</i>
 </p>
