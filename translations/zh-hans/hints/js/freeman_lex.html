@@ -1,0 +1,57 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>我不知道如何开始解决这个任务。</p>
+    </div>
+    <div class="answer">
+        <p>
+            偶数是可以被2整除的（除以2，余数为0）。所以要解决这个任务，你应该把输入的数字除以2，找到余数并与0比较。
+        </p>  
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>我应该从什么开始？</p>
+    </div>
+    <div class="answer">
+        <p>
+            你应该使用<a target="_blank" href="https://www.w3schools.com/js/js_operators.asp"> modulus operator %</a> ，它返回除法的余数，以及平等运算符（==）。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>我大致理解，但需要看到最终的解决方案。</p>
+    </div>
+    <div class="answer">
+        这就是了。
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return num % 2 == 0;
+}      
+        </pre>
+        </div>
+       <p> 
+            这个解决方案可能有点棘手。<b class="code">num % 2</b> 已经返回值，可以作为bool使用，所以我们不需要<b class="code">== 0</b> 。但是对于偶数，<b class="code">num % 2</b> 将返回<b class="code">0</b> ，这在布尔逻辑中意味着<b class="code">false</b> 。所以你必须使用'not'操作符<b class="code">!</b> 来反转bool值，因为对于偶数，该函数必须返回<b class="code">true</b> 。而代码是：
+       </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function isEven(num: number): boolean {
+
+    return!(num % 2);
+}       
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>谢谢。我现在知道并理解了更多!一切都在运作</p>
+    </div>
+    <div class="answer">
+        👍很高兴听到这个消息!
+    </div>
+</div>
+</body>
